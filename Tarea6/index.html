@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notas</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <fieldset>
+                <legend>Formulario</legend>
+                <form id="form" onsubmit="guardar();">
+                    <!-- Name -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="patricio" required><br>
+                    
+                    <!-- Surname -->
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" placeholder="camalan" required><br>
+                    
+                    <!-- id -->
+                    <label for="id">Identity:</label>
+                    <input type="number" id="id" placeholder="xxxx" required><br><br>
+                    
+                    <!-- Notas -->
+                    <label for="nota">Nota:</label>
+                    <input type="number" id="nota" min="0" max="100" placeholder="Enter your rating between 0 to 100"><br>
+                    
+                
+
+                    <!-- Button Submitted -->
+                    <center>
+                        <button>Submit</button>
+                    </center>
+
+                </form>
+                
+            </fieldset>
+        </div>
+
+        <div class="containe2">
+            <fieldset>
+                <legend>Estudiantes</legend>
+
+                <!-- Tabla -->
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>ID</th>
+                        <th>Nota</th>
+                        <th>Funciones</th>
+                        
+
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+        <div id="promedio"></div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>

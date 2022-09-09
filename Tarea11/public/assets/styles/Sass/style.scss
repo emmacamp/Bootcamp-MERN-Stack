@@ -1,0 +1,165 @@
+@import "nav";
+@import "header";
+@import "media";
+@import "footer";
+@import "carrusel";
+@import "not-found";
+@import "form";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+$blue: #117bff;
+$black: #000;
+$white: #fff;
+
+/* Go Top */
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 60px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: $blue;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 5px 14px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 30px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: $white;
+  color: $blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $black;
+  overflow-x: hidden;
+}
+
+/* Center Content */
+.center-content {
+  @include flex-center();
+  width: 100%;
+  height: 60%;
+  background-color: $black;
+
+  h2 {
+    color: $white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+    border-bottom: $blue solid 1px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      height: 100%;
+      margin-bottom: 100px;
+      box-shadow: 0px 0px 10px rgba(41, 87, 224, 0.5);
+
+      .card {
+        background-color: $blue;
+        color: $black;
+        width: 200px;
+        height: auto;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 0 10px 0 10px;
+      }
+
+      img {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+      }
+
+      .card-content {
+        @include flex-center();
+        width: 100%;
+        height: auto;
+
+        p {
+          font-size: 15px;
+          margin-bottom: 20px;
+          margin-top: 0;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-content {
+  background: url("https://content.codecademy.com/projects/innovation-cloud/jumbotron_bg.jpg")
+    center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  h2 {
+    color: $white;
+    text-align: right;
+  }
+  p {
+    color: $white;
+    text-align: right;
+  }
+  .btn {
+    margin: 10px 0 0;
+    float: right;
+    color: $white;
+    background: $black;
+    padding: 10px 60px;
+    text-decoration: none;
+    transition: background 0.5s;
+    &:hover {
+      background: $blue;
+      cursor: pointer;
+      transition: background 0.5s;
+    }
+  }
+}

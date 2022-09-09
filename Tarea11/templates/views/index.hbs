@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FavIcon -->
+  <link rel="shortcut icon" href="./icons/email.png">
+  <!-- Sass Styles -->
+  <link rel="stylesheet" href="assets/styles/Sass/dist/style.css">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Add download icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portafolio</title>
+  </head>
+<body>
+  
+    <header class="header">
+      <div class="container" data-aos="fade-up">
+        <h1 class="name">EMMANUEL A. POPA <br />CAMPUSANO</h1>
+        <p>Web <span class="typed"></span></p>
+        <a class="btn" href="assets/cv/CV-Emmanuel-Popa.pdf" target="_blank" rel="noopener noreferrer" title="curriculum vitae"  ><i class="fa fa-download"></i> Download</a>
+      </div>
+    </header>
+
+    {{>nav}}
+
+    <div class="center-content">
+      <h2 data-aos="fade-up">Projects</h2>
+      <div class="container">
+       <div class="cards">
+        
+        {{>cards}}
+        {{>cards}}
+        {{>cards}}
+        {{>cards}}
+        {{>cards}}
+        
+
+       </div>
+      </div>
+    </div>
+        
+    <div class="down-content">
+      <div class="down-content-container">
+        <div class="email">
+            <form class="form">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Message" required></textarea>
+              <input type="submit" value="Send">
+            </form>
+        </div>
+        <div class="container" data-aos="fade-left">
+          <h2>Send me an e-mail</h2>
+          <p>Receive weekly insights from industry insiders.</p>
+          <a class="btn" href="#">Join</a>
+        </div>
+      </div>
+    </div>
+    
+    {{!-- Carrusel --}}
+    {{>carrusel}}
+    
+    {{!-- Footer --}}
+    {{>footer}}
+   
+    <button onclick="topFunction()" id="myBtn" title="Go to top">⮙</button>
+
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- My Scripts -->
+    <script src="js/app.js"></script>
+
+     <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

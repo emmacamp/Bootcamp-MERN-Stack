@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.nav {
+  background: #000;
+  width: 100%;
+  height: 80px;
+}
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+.nav ul li a {
+  color: #fff;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 10px;
+  transition: background 0.5s;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.header {
+  box-sizing: border-box;
+  background: url("https://content.codecademy.com/projects/innovation-cloud/bg.jpg") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+}
+.header .container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px;
+  padding-top: 50px;
+}
+.header .container .name {
+  color: #fff;
+  line-height: 100px;
+  font-size: 80px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.header .container p {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.header .container .btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  transition: background 0.5s;
+}
+.header .container .btn:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+/* @media (min-width: 850px) {
+  .header .container h1 {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 100px) {
+  .header h1 {
+    font-size: 10px;
+    line-height: 64px;
+  }
+
+  .main,
+  .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+} */
+footer {
+  background: #000;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container-rights {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+footer .container-rights p {
+  color: #fff;
+  font-size: 14px;
+}
+footer .container-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+footer .container-icons a {
+  padding: 0 10px;
+}
+
+.carrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 450px;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.carrusel h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  border-bottom: #1178F8 solid 1px;
+  width: 350px;
+}
+.carrusel .carrusel-items {
+  display: flex;
+  overflow-x: hidden;
+}
+.carrusel .carrusel-items .carrusel-item {
+  padding: 10px 20px;
+}
+
+.not-found-body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.not-found-body .not-found-container {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.not-found-body .not-found-container .not-found-btn {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  border-bottom: #2513ec solid 1px;
+  width: 350px;
+  text-decoration: none;
+}
+.not-found-body .not-found-container .not-found-btn button {
+  box-shadow: 0px 0px 10px rgba(41, 87, 224, 0.5);
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.down-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.down-content-container .email {
+  background-color: rgba(143, 143, 143, 0.307);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.down-content-container .email .envelope-wrapper {
+  background-color: rgba(14, 143, 143, 0.307);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.down-content-container .email .envelope-wrapper .envelope {
+  width: 70%;
+  background-color: rosybrown;
+}
+.down-content-container .email .envelope-wrapper .envelope .card {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 0 10px 0 10px;
+}
+.down-content-container .email .envelope-wrapper .envelope .card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.down-content-container .container {
+  position: relative;
+  margin-right: 30px;
+}
+
+/* Go Top */
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 60px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #117bff;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 5px 14px;
+  /* Some padding */
+  border-radius: 50%;
+  /* Rounded corners */
+  font-size: 30px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #fff;
+  color: #117bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* Center Content */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  background-color: #000;
+}
+.center-content h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase;
+  border-bottom: #117bff solid 1px;
+}
+.center-content .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+.center-content .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  margin-bottom: 100px;
+  box-shadow: 0px 0px 10px rgba(41, 87, 224, 0.5);
+}
+.center-content .container .cards .card {
+  background-color: #117bff;
+  color: #000;
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 0 10px 0 10px;
+}
+.center-content .container .cards img {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+.center-content .container .cards .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.center-content .container .cards .card-content p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: #fff;
+}
+
+.down-content {
+  background: url("https://content.codecademy.com/projects/innovation-cloud/jumbotron_bg.jpg") center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.down-content h2 {
+  color: #fff;
+  text-align: right;
+}
+
+.down-content p {
+  color: #fff;
+  text-align: right;
+}
+
+.down-content .btn {
+  margin: 10px 0 0;
+  float: right;
+  color: #fff;
+  background: #000;
+  padding: 10px 60px;
+  text-decoration: none;
+  transition: background 0.5s;
+}
+
+.down-content .btn:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background 0.5s;
+}

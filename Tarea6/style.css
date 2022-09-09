@@ -1,0 +1,103 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 42%, rgba(62,210,240,1) 100%);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; 
+    font-family: 'Lato', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-family: sans-serif;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 500px;
+    border-radius: 5px;
+
+}
+
+
+
+
+fieldset{
+    width: 400px;
+    border-radius: 5px;
+   margin: 0 20px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+table{
+    width: 100%;
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 2px;
+    
+}
+
+th, tr, td{
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+input:focus{
+    border: none;
+}
+
+#promedio{
+    color: #000;
+    margin-top: 20px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+button{
+    /* cursor: pointer;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px; */
+
+    background: #f5f5fb;
+    padding: 5px 20px;
+    color: #5549af;
+    border: 1px solid #f5f5fb;
+    font-size:16px;
+    font-weight:600;
+    font-weight: 700;
+    border-radius: 100px;
+    outline:0;
+    box-shadow:none;
+    transition: .5s;
+    text-decoration: none;
+
+}
+
+button:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+}

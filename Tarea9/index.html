@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Sass/dist/style.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Pokemons</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <h1>POKEMON</h1>
+            </div>
+        </nav>
+
+        <form class="form" id="form">
+            
+            <div class="search">
+                <!-- Search Input -->
+                <input type="text" class="search-input" id="name" placeholder="Ingrese el nombre del pokemon">
+                <!-- Button Submit -->
+                <input type="submit" value="Buscar" class="btnSubmit">
+            </div>
+        </form>
+    </header>
+
+
+    <div class="card__pokemon" id="card__pokemon">
+        <!-- Image -->
+        <div class="card__pokemon__image">
+            
+        </div>
+        <!-- Info -->
+        <div class="card__pokemon__info" id="card__pokemon__info">
+            <div class="pack">    
+            <p id="#name" class="card">Name: <span class="card__pokemon__info__name"></span></p>
+            </div>
+            <div class="pack">
+                <p id="#type" class="card">Type: <span class="card__pokemon__info__type"></span></p>
+            </div>
+            <div class="pack">
+                <p id="#height" class="card">Height: <span class="card__pokemon__info__height"></span></p>
+            </div>
+            <div class="pack">
+                <p id="#weight" class="card">Weight: <span class="card__pokemon__info__weight"></span></p>
+                </div>
+            <div class="pack">
+                <p id="#abilities" class="card">Abilities: <span class="card__pokemon__info__abilities"></span></p>
+            </div>
+            <div class="pack">
+                <p id="#stats" class="card">Stats: <span class="card__pokemon__info__stats"></span></p>
+            </div>
+            
+            <div href="moves" class="pack pack-moves">
+                <p id="#moves">Moves:</p> <span class="card__pokemon__info__moves"></span>
+            </div>
+            <div class="moreMovesContainer" id="moreMovesContainer" >
+            </div>
+           
+
+
+            <style>
+                a{
+                    text-decoration: none;
+                    color: gray;
+                }
+
+            </style>
+
+
+        </div>
+    </div>
+    
+
+   
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__text">
+                <p>© 2022 Popa Pokémon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
